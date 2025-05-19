@@ -9,6 +9,5 @@ int main() {
     }
     std::cout << "--------------------------------" << std::endl;
     delete[] zombie;
-    zombie = nullptr;
     return (0);
 }
