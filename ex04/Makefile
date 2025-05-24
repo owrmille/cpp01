@@ -1,7 +1,7 @@
-NAME = content_replacer
+NAME = string_replacer
 CXX = c++
 CXXFLAGS = -Wextra -Wall -Werror -std=c++98
-SRCS =	main.cpp ContentReplacer.cpp 
+SRCS =	main.cpp StringReplacer.cpp 
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
