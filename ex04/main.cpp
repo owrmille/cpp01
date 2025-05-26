@@ -6,12 +6,23 @@ int main() {
 	std::cout << "\n=== Testing one line replacement ===" << std::endl;
 	stringReplacer.replaceString();
 
-	std::cout << "\n=== Testing general cases ===" << std::endl;
-	stringReplacer.setFilePath("tests/general_cases");
+	std::cout << "\n=== Testing permissions ===" << std::endl;
+	stringReplacer.setFilePath("tests/test_permisions");
+	stringReplacer.setOldString("hello");
+	stringReplacer.setNewString("bye");
 	stringReplacer.replaceString();
 
 	std::cout << "\n=== Testing empty file ===" << std::endl;
 	stringReplacer.setFilePath("tests/empty");
+	stringReplacer.replaceString();
+
+	std::cout << "\n=== Testing non-existent file ===" << std::endl;
+	stringReplacer.setFilePath("tests/non_existent_file");
+	stringReplacer.replaceString();
+
+	std::cout << "\n=== Testing empty old string ===" << std::endl;
+	stringReplacer.setFilePath("tests/general_cases");
+	stringReplacer.setOldString("");
 	stringReplacer.replaceString();
 
 	std::cout << "\n=== Testing one line no replacement ===" << std::endl;
@@ -22,13 +33,8 @@ int main() {
 	stringReplacer.setFilePath("tests/multiLine_noRep");
 	stringReplacer.replaceString();
 
-	std::cout << "\n=== Testing non-existent file ===" << std::endl;
-	stringReplacer.setFilePath("tests/non_existent_file");
-	stringReplacer.replaceString();
-
-	std::cout << "\n=== Testing empty old string ===" << std::endl;
+	std::cout << "\n=== Testing general cases ===" << std::endl;
 	stringReplacer.setFilePath("tests/general_cases");
-	stringReplacer.setOldString("");
 	stringReplacer.replaceString();
 
 	std::cout << "\n=== Testing overlapping replacements ===" << std::endl;
@@ -43,7 +49,7 @@ int main() {
 	stringReplacer.setNewString("h€llö");
 	stringReplacer.replaceString();
 
-	std::cout << "\n=== Testing very long strings ===" << std::endl;
+	std::cout << "\n=== Testing long strings ===" << std::endl;
 	stringReplacer.setFilePath("tests/long_strings");
 	stringReplacer.setOldString("hello");
 	stringReplacer.setNewString(std::string(1000, 'x'));
