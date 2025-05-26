@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   StringReplacer.cpp                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iatopchu <iatopchu@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/26 15:09:31 by iatopchu          #+#    #+#             */
+/*   Updated: 2025/05/26 15:09:32 by iatopchu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "StringReplacer.hpp"
 
 StringReplacer::StringReplacer(const std::string& filePath, const std::string& oldString, const std::string& newString) 
